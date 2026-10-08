@@ -503,3 +503,54 @@ footer {
 footer p span {
     color: var(--primary-green);
 }
+
+/* ==========================================================================
+   ADAPTACIÓN PARA MÓVILES (Menú Horizontal con Scroll pa el navegador)
+   ========================================================================== */
+@media (max-width: 768px) {
+    /* Centrar el logo y poner el menú debajo */
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.8rem 1rem;
+        gap: 0.8rem;
+    }
+
+    .brand-box {
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Ocultar el subtítulo largo para ganar más espacio en móvil */
+    .brand-subtitle {
+        display: none;
+    }
+
+    /* Configurar el nav para permitir deslizamiento táctil horizontal */
+    nav {
+        width: 100%;
+        overflow-x: auto;
+        /* Scroll suave para dispositivos Apple */
+        -webkit-overflow-scrolling: touch; 
+        /* Ocultar la barra de scroll en navegadores que lo permitan */
+        scrollbar-width: none; 
+    }
+    
+    nav::-webkit-scrollbar {
+        display: none;
+    }
+
+    nav ul {
+        /* Evita que los elementos se apilen en vertical */
+        flex-wrap: nowrap; 
+        justify-content: flex-start;
+        padding: 0 0.2rem 0.5rem 0.2rem;
+    }
+
+    nav a {
+        /* Evita que el texto de un mismo botón se parta en dos líneas */
+        white-space: nowrap; 
+        font-size: 0.85rem;
+        padding: 0.4rem 0.7rem;
+    }
+}
