@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | José Sánchez Zumel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="video-bg-container">
+        <video id="bg-video" autoplay loop muted playsinline>
+            <source src="matrix-bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="overlay-grid"></div>
+
+    <header>
+        <div class="header-container">
+            <div class="brand-box">
+                <span class="ibm-logo-title">JOSÉ SÁNCHEZ ZUMEL</span>
+                <span class="brand-subtitle">&gt; CONTACTO DIRECTO</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">[ 01. INICIO ]</a></li>
+                    <li><a href="experiencia.html">[ 02. EXPERIENCIA ]</a></li>
+                    <li><a href="proyectos.html">[ 03. PROYECTOS ]</a></li>
+                    <li><a href="formacion.html">[ 04. FORMACIÓN ]</a></li>
+                    <li><a href="contacto.html" class="active">[ 05. CONTACTO ]</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title-section">
+            <h1>/ CANALES DE CONTACTO</h1>
+        </div>
+
+        <div class="home-grid">
+            
+            <!-- Datos de contacto -->
+            <section class="glass-card">
+                <h2 style="font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 1.2rem; border-bottom: 1px dashed var(--card-border); padding-bottom: 0.5rem;">
+                    # DATOS DE CONTACTO
+                </h2>
+
+                <div style="margin-bottom: 1.2rem;">
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-family: var(--font-mono);">[ TELÉFONO ]</p>
+                    <p style="font-size: 1.2rem; font-family: var(--font-mono); color: var(--primary-green); display: flex; justify-content: space-between; align-items: center;">
+                        +34 677 71 46 52
+                        <button class="copy-btn btn-submit" data-copy="+34677714652" style="padding: 0.2rem 0.6rem; font-size: 0.75rem;">COPIAR</button>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.2rem;">
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-family: var(--font-mono);">[ CORREO ELECTRÓNICO ]</p>
+                    <p style="font-size: 1rem; font-family: var(--font-mono); color: var(--primary-green); display: flex; justify-content: space-between; align-items: center; word-break: break-all;">
+                        sanchezzumeljose@gmail.com
+                        <button class="copy-btn btn-submit" data-copy="sanchezzumeljose@gmail.com" style="padding: 0.2rem 0.6rem; font-size: 0.75rem;">COPIAR</button>
+                    </p>
+                </div>
+
+                <div style="margin-bottom: 1.2rem;">
+                    <p style="color: var(--text-muted); font-size: 0.85rem; font-family: var(--font-mono);">[ UBICACIÓN ]</p>
+                    <p style="font-size: 1.1rem; color: var(--text-main);">
+                        Calle Nogalte<br>
+                        28670 Villaviciosa de Odón, Madrid
+                    </p>
+                </div>
+
+                <div class="terminal-box" style="margin-top: 1.5rem;">
+                    <div class="terminal-header">
+                        <span class="terminal-title">disponibilidad.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p>✓ Movilidad propia con vehículo</p>
+                        <p>✓ Incorporación inmediata</p>
+                        <p>✓ Disponibilidad horaria completa</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Formulario interactivo -->
+            <section class="glass-card">
+                <h2 style="font-family: var(--font-mono); color: var(--primary-green); margin-bottom: 1.2rem; border-bottom: 1px dashed var(--card-border); padding-bottom: 0.5rem;">
+                    # ENVIAR MENSAJE
+                </h2>
+
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nombre">&gt; Nombre Completo / Empresa:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Ej: Maria García (Recruiting Manager)">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">&gt; Email de contacto:</label>
+                        <input type="email" id="email" name="email" required placeholder="Ej: contacto@empresa.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">&gt; Asunto:</label>
+                        <input type="text" id="asunto" name="asunto" required placeholder="Ej: Propuesta de empleo SysAdmin">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">&gt; Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe aquí los detalles del mensaje o vacante..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">[ ENVIAR MENSAJE DIRECTO ]</button>
+                </form>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <span>José Sánchez Zumel</span> | Administrador de Sistemas Informáticos en Red</p>
+    </footer>
+
+</body>
+</html>

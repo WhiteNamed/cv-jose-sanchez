@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formación y Habilidades | José Sánchez Zumel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="video-bg-container">
+        <video id="bg-video" autoplay loop muted playsinline>
+            <source src="matrix-bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="overlay-grid"></div>
+
+    <header>
+        <div class="header-container">
+            <div class="brand-box">
+                <span class="ibm-logo-title">JOSÉ SÁNCHEZ ZUMEL</span>
+                <span class="brand-subtitle">&gt; ESTUDIOS, TITULACIONES Y SKILLS</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">[ 01. INICIO ]</a></li>
+                    <li><a href="experiencia.html">[ 02. EXPERIENCIA ]</a></li>
+                    <li><a href="proyectos.html">[ 03. PROYECTOS ]</a></li>
+                    <li><a href="formacion.html" class="active">[ 04. FORMACIÓN ]</a></li>
+                    <li><a href="contacto.html">[ 05. CONTACTO ]</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title-section">
+            <h1>/ FORMACIÓN Y CAPACIDADES</h1>
+        </div>
+
+        <div class="info-grid">
+            
+            <!-- Bloque Formación -->
+            <section class="glass-card" style="grid-column: span 1;">
+                <h2 style="font-family: var(--font-mono); color: var(--primary-green); margin-bottom: 1.2rem; border-bottom: 1px dashed var(--card-border); padding-bottom: 0.5rem;">
+                    # ESTUDIOS ACADÉMICOS
+                </h2>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <span style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem;">[ 2024 – 2026 ]</span>
+                    <h3 style="font-size: 1.2rem; color: var(--text-main);">Grado Superior en Administración de Sistemas Informáticos en Red (ASIR)</h3>
+                    <p style="color: var(--primary-green); font-weight: 600;">Universidad Alfonso X El Sabio</p>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <span style="font-family: var(--font-mono); color: var(--accent-cyan); font-size: 0.85rem;">[ 2022 – 2024 ]</span>
+                    <h3 style="font-size: 1.2rem; color: var(--text-main);">Grado Medio en Sistemas Microinformáticos y Redes (SMR)</h3>
+                    <p style="color: var(--primary-green); font-weight: 600;">IES Arquitecto Ventura Rodríguez</p>
+                </div>
+            </section>
+
+            <!-- Bloque Habilidades Técnicas -->
+            <section class="glass-card" style="grid-column: span 1;">
+                <h2 style="font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 1.2rem; border-bottom: 1px dashed var(--card-border); padding-bottom: 0.5rem;">
+                    # DATOS Y APTITUDES
+                </h2>
+
+                <ul class="tech-list">
+                    <li><strong>Carnet de conducir:</strong> Sí (Permiso B)</li>
+                    <li><strong>Vehículo propio:</strong> Coche propio para desplazamientos laborales.</li>
+                    <li><strong>Inglés:</strong> Nivel Medio (B1).</li>
+                    <li><strong>Herramientas Ofimáticas:</strong> Microsoft Office, LibreOffice, Suites Cloud.</li>
+                    <li><strong>Actitud:</strong> Proactiva, orientada al trabajo en equipo y resolución rápida de problemas.</li>
+                </ul>
+            </section>
+
+        </div>
+
+        <!-- Matriz de Competencias IT -->
+        <section class="glass-card" style="margin-top: 1rem;">
+            <h2 style="font-family: var(--font-mono); color: var(--primary-green); margin-bottom: 1rem;">
+                # MATRIZ DE COMPETENCIAS TÉCNICAS
+            </h2>
+            <div class="info-grid">
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <span class="terminal-title">Sistemas y Virtualización</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p>• Proxmox VE / KVM</p>
+                        <p>• Contenedores Docker</p>
+                        <p>• Windows Server & Active Directory</p>
+                        <p>• Debian / Ubuntu Server</p>
+                    </div>
+                </div>
+
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <span class="terminal-title">Redes y Seguridad</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p>• VPNs (Strongswan / FortiGate)</p>
+                        <p>• Protocolos SSH, LDAP, RDP, NFS, SMB</p>
+                        <p>• Certificados Digitales PKI</p>
+                        <p>• Redes Multi-WAN (Ethernet/WiFi/5G)</p>
+                    </div>
+                </div>
+
+                <div class="terminal-box">
+                    <div class="terminal-header">
+                        <span class="terminal-title">Servicios Web y Datos</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p>• Nginx / Web Servers</p>
+                        <p>• MariaDB / MySQL Databases</p>
+                        <p>• Monitorización Backend</p>
+                        <p>• Raspberry Pi Systems</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <span>José Sánchez Zumel</span> | Administrador de Sistemas Informáticos en Red</p>
+    </footer>
+
+</body>
+</html>

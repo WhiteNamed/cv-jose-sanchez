@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos Destacados | José Sánchez Zumel</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <div id="video-bg-container">
+        <video id="bg-video" autoplay loop muted playsinline>
+            <source src="matrix-bg.mp4" type="video/mp4">
+        </video>
+    </div>
+    <canvas id="matrix-canvas"></canvas>
+    <div class="overlay-grid"></div>
+
+    <header>
+        <div class="header-container">
+            <div class="brand-box">
+                <span class="ibm-logo-title">JOSÉ SÁNCHEZ ZUMEL</span>
+                <span class="brand-subtitle">&gt; PROYECTOS DE INFRAESTRUCTURA Y SISTEMAS</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">[ 01. INICIO ]</a></li>
+                    <li><a href="experiencia.html">[ 02. EXPERIENCIA ]</a></li>
+                    <li><a href="proyectos.html" class="active">[ 03. PROYECTOS ]</a></li>
+                    <li><a href="formacion.html">[ 04. FORMACIÓN ]</a></li>
+                    <li><a href="contacto.html">[ 05. CONTACTO ]</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-title-section">
+            <h1>/ PROYECTOS DESTACADOS</h1>
+        </div>
+
+        <!-- Proyecto 1: TFC -->
+        <article class="glass-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                    <h2 style="font-family: var(--font-mono); color: var(--primary-green); font-size: 1.5rem;">TFC - TRABAJO DE FIN DE CICLO</h2>
+                    <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.9rem;">[ CALIFICACIÓN: MÁXIMA NOTA ]</p>
+                </div>
+                <span class="tag highlight" style="font-size: 0.9rem;">PROXMOX & VIRTUALIZACIÓN</span>
+            </div>
+            
+            <p style="margin-top: 1rem; line-height: 1.7; font-size: 1.05rem;">
+                Proyecto integral basado en la instalación, configuración y despliegue de un entorno completo de virtualización de servidores con <strong>Proxmox VE</strong>, completamente accesible desde cualquier lugar vía Internet con infraestructura de comunicaciones seguras.
+            </p>
+
+            <div class="terminal-box" style="margin-top: 1.2rem;">
+                <div class="terminal-header">
+                    <span class="term-btn term-red"></span>
+                    <span class="term-btn term-yellow"></span>
+                    <span class="term-btn term-green"></span>
+                    <span class="terminal-title">tfc-stack-architecture.log</span>
+                </div>
+                <div class="terminal-body">
+                    <ul class="tech-list">
+                        <li><strong>Virtualizador Base:</strong> Proxmox VE con Alta Disponibilidad (HA).</li>
+                        <li><strong>Sistemas Operativos Desplegados:</strong> Debian, Ubuntu Server y Windows Server.</li>
+                        <li><strong>Redes y Seguridad:</strong> Configuración de VPNs para acceso remoto seguro.</li>
+                        <li><strong>Contenedores:</strong> Manejo y orquestación de servicios en Docker.</li>
+                        <li><strong>Bases de Datos:</strong> Creación, gestión y optimización de bases de datos MariaDB.</li>
+                        <li><strong>Servicios Configurados:</strong> SSH, NFS, SMB, Nginx (Reverse Proxy), LDAP, RDP, xRDP, HTTP/HTTPS entre otros.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tech-tags" style="margin-top: 1.2rem;">
+                <span class="tag highlight">Proxmox</span>
+                <span class="tag highlight">Docker</span>
+                <span class="tag">Debian / Ubuntu / Windows Server</span>
+                <span class="tag">VPNs</span>
+                <span class="tag">Nginx</span>
+                <span class="tag">MariaDB</span>
+                <span class="tag">LDAP</span>
+                <span class="tag">NFS / SMB</span>
+            </div>
+        </article>
+
+        <!-- Proyecto 2: INFRAESTRUCTURA CLR -->
+        <article class="glass-card">
+            <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 1rem;">
+                <div>
+                    <h2 style="font-family: var(--font-mono); color: var(--primary-green); font-size: 1.5rem;">INFRAESTRUCTURA DE COMUNICACIONES CLR</h2>
+                    <p style="color: var(--accent-cyan); font-family: var(--font-mono); font-size: 0.9rem;">[ PROYECTO EN EQUIPO DE ALTA DISPONIBILIDAD ]</p>
+                </div>
+                <span class="tag highlight" style="font-size: 0.9rem;">REDES MULTI-WAN & CLOUD</span>
+            </div>
+
+            <p style="margin-top: 1rem; line-height: 1.7; font-size: 1.05rem;">
+                Desarrollo en grupo de una infraestructura de red de alta resiliencia diseñada para comunicar un nodo Edge a la nube a través de múltiples enlaces redundantes con conmutación por error.
+            </p>
+
+            <ul class="tech-list" style="margin-top: 1rem;">
+                <li><strong>Conectividad Multi-WAN:</strong> Implementación de 3 salidas independientes a Internet (Ethernet, WiFi y 4G/5G).</li>
+                <li><strong>Servidores VPN Redundantes:</strong> Despliegue de túneles VPN seguros mediante <strong>Strongswan</strong> y <strong>FortiGate</strong>.</li>
+                <li><strong>Métricas en la Nube:</strong> Almacenamiento y procesamiento continuo de métricas de rendimiento de red en un servidor Cloud dedicado.</li>
+            </ul>
+
+            <div class="tech-tags" style="margin-top: 1.2rem;">
+                <span class="tag highlight">FortiGate</span>
+                <span class="tag highlight">Strongswan VPN</span>
+                <span class="tag">Multi-WAN (4G/5G)</span>
+                <span class="tag">Edge Node</span>
+                <span class="tag">Cloud Server</span>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <span>José Sánchez Zumel</span> | Administrador de Sistemas Informáticos en Red</p>
+    </footer>
+
+</body>
+</html>

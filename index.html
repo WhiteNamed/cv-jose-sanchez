@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>José Sánchez Zumel | SysAdmin & Redes</title>
+    <!-- Estilos externos CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Scripts externos JS linkados en el head -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Contenedor para el vídeo de fondo Matrix digital rain -->
+    <div id="video-bg-container">
+        <video id="bg-video" autoplay loop muted playsinline>
+            <source src="matrix-bg.mp4" type="video/mp4">
+            Tu navegador no soporta el reproductor de vídeo.
+        </video>
+    </div>
+    <!-- Canvas fallback/overlay para efecto Lluvia Digital Matrix por JS -->
+    <canvas id="matrix-canvas"></canvas>
+    <div class="overlay-grid"></div>
+
+    <!-- Navegación Superior Sticky -->
+    <header>
+        <div class="header-container">
+            <div class="brand-box">
+                <!-- Nombre con tipografía estilo Logo IBM (Líneas / Rallas horizontales) -->
+                <span class="ibm-logo-title">JOSÉ SÁNCHEZ ZUMEL</span>
+                <span class="brand-subtitle">&gt; ADMINISTRADOR DE SISTEMAS INFORMÁTICOS EN RED</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">[ 01. INICIO ]</a></li>
+                    <li><a href="experiencia.html">[ 02. EXPERIENCIA ]</a></li>
+                    <li><a href="proyectos.html">[ 03. PROYECTOS ]</a></li>
+                    <li><a href="formacion.html">[ 04. FORMACIÓN ]</a></li>
+                    <li><a href="contacto.html">[ 05. CONTACTO ]</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="home-grid">
+            <!-- Sidebar con Perfil Breve -->
+            <aside class="glass-card profile-sidebar">
+                <div class="profile-avatar-container">
+                    <!-- Imagen de Perfil -->
+                    <img src="foto-jose.jpg" alt="Foto de José Sánchez Zumel" onerror="this.src='https://via.placeholder.com/180/0d1a10/00ff66?text=JSZ';">
+                </div>
+                <h2 style="font-family: var(--font-mono); color: var(--primary-green); font-size: 1.2rem;">José Sánchez Zumel</h2>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">Villaviciosa de Odón, Madrid</p>
+                
+                <div class="status-badge">
+                    <span class="status-dot"></span> DISPONIBLE PARA TRABAJAR
+                </div>
+
+                <div class="terminal-box" style="margin-top: 1.5rem; text-align: left;">
+                    <div class="terminal-header">
+                        <span class="term-btn term-red"></span>
+                        <span class="term-btn term-yellow"></span>
+                        <span class="term-btn term-green"></span>
+                        <span class="terminal-title">sysinfo.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <p><strong>OS:</strong> Linux / Windows Server</p>
+                        <p><strong>Especialidad:</strong> SysAdmin & Virtualización</p>
+                        <p><strong>Carnet:</strong> Sí (Coche Propio)</p>
+                        <p><strong>Inglés:</strong> B1 Intermedio</p>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- Contenido Principal de Inicio -->
+            <section>
+                <!-- Tarjeta Mi Perfil -->
+                <article class="glass-card">
+                    <h2 style="font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 1rem; border-bottom: 1px dashed var(--card-border); padding-bottom: 0.5rem;">
+                        # MI PERFIL PROFESIONAL
+                    </h2>
+                    <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main);">
+                        Técnico superior especializado en instalación, mantenimiento y reparación de equipos informáticos, infraestructuras de comunicación seguras y alta disponibilidad. Con experiencia en soporte técnico a usuarios, administración de sistemas, creación de entornos seguros y virtualización.
+                    </p>
+                    <p style="font-size: 1.05rem; line-height: 1.7; color: var(--text-main); margin-top: 0.8rem;">
+                        Capacidad demostrada para resolver incidencias complejas, optimizar recursos IT y garantizar la continuidad operativa en entornos corporativos críticos.
+                    </p>
+                    
+                    <div class="tech-tags" style="margin-top: 1.2rem;">
+                        <span class="tag highlight">Administración de Sistemas</span>
+                        <span class="tag highlight">Virtualización (Proxmox/Docker)</span>
+                        <span class="tag highlight">Redes & Seguridad (VPNs)</span>
+                        <span class="tag">Soporte Técnico</span>
+                        <span class="tag">Alta Disponibilidad</span>
+                    </div>
+                </article>
+
+                <!-- Tarjeta Sobre Mí -->
+                <article class="glass-card">
+                    <h2 style="font-family: var(--font-mono); color: var(--accent-cyan); margin-bottom: 1rem; border-bottom: 1px dashed var(--card-border); padding-bottom: 0.5rem;">
+                        # SOBRE MÍ
+                    </h2>
+                    <p style="font-size: 1.05rem; line-height: 1.7;">
+                        Me considero un chico proactivo, al que le encantan los retos y mejorar profesionalmente día a día.
+                    </p>
+                    <p style="font-size: 1.05rem; line-height: 1.7; margin-top: 0.8rem;">
+                        Me apasiona el mundo de la informática desde que era pequeño, además de disfrutar con el trato con la gente y ayudar cuando se me requiere para solucionar cualquier problema técnico o de infraestructura.
+                    </p>
+                    
+                    <ul class="tech-list" style="margin-top: 1rem;">
+                        <li><strong>Actitud proactiva:</strong> Iniciativa para resolver problemas antes de que se conviertan en incidencias.</li>
+                        <li><strong>Ganas de aprender:</strong> Adaptación rápida a nuevas tecnologías y entornos de red.</li>
+                        <li><strong>Trato al usuario:</strong> Capacidad para comunicar de forma clara y efectiva en labores de soporte.</li>
+                    </ul>
+                </article>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 <span>José Sánchez Zumel</span> | Administrador de Sistemas Informáticos en Red</p>
+    </footer>
+
+</body>
+</html>
