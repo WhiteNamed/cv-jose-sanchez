@@ -114,21 +114,37 @@ function initCopyButtons() {
 }
 
 /**
- * Simulación de envío de formulario de contacto
+ * Envío de formulario de contacto usando FormSubmit con AJAX
  */
 function initContactForm() {
     const form = document.getElementById("contactForm");
     if (!form) return;
 
     form.addEventListener("submit", (e) => {
-        e.preventDefault();
+        e.preventDefault(); 
+        
         const submitBtn = form.querySelector(".btn-submit");
         submitBtn.innerHTML = "ENVIANDO MENSAJE...";
-        
-        setTimeout(() => {
+
+        const formData = new FormData(form);
+
+        fetch("https://formsubmit.co/ajax/sanchezzumeljose@gmail.com", {
+            method: "POST",
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        })
+        .then(response => response.json())
+        .then(data => {
             alert("¡Mensaje enviado con éxito! José se pondrá en contacto contigo muy pronto.");
             form.reset();
-            submitBtn.innerHTML = "ENVIAR MENSAJE";
-        }, 1200);
+            submitBtn.innerHTML = "[ ENVIAR MENSAJE DIRECTO ]";
+        })
+        .catch(error => {
+            console.error("Error al enviar el formulario:", error);
+            alert("Hubo un error al enviar el mensaje. Por favor, revisa tu conexión e inténtalo de nuevo.");
+            submitBtn.innerHTML = "[ ENVIAR MENSAJE DIRECTO ]";
+        });
     });
 }
