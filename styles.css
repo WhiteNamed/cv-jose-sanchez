@@ -489,6 +489,13 @@ ul.tech-list li::before {
     box-shadow: 0 0 15px rgba(0, 255, 102, 0.5);
 }
 
+/* Evita que el botón COPIAR se encoja o divida en dos líneas */
+.copy-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+    width: auto !important;
+}
+
 /* --------------------------------------------------------------------------
    FOOTER
    -------------------------------------------------------------------------- */
