@@ -233,6 +233,31 @@ main {
     border-color: var(--card-border-hover);
 }
 
+/* Ajusta el formulario para llenar todo el alto disponible de la tarjeta */
+.glass-card:has(form) {
+    display: flex;
+    flex-direction: column;
+}
+
+.glass-card form {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* El campo de Mensaje absorbe el espacio vertical sobrante */
+.glass-card form .form-group:has(textarea) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.glass-card form textarea {
+    flex: 1;
+    height: auto;
+    min-height: 120px;
+}
+
 /* --------------------------------------------------------------------------
    COMPONENTES ESPECÍFICOS
    -------------------------------------------------------------------------- */
